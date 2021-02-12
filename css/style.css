@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: black;
+  font-size: 20px;
+  line-height: 1.75;
+  color: #fff;
+}
+
+.main_top {
+  position: fixed;
+  top: 0;
+  left: 300px;
+  width: calc(100% - 300px);
+  height: 90px;
+  background: #191622;
+}
+
+.main_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: calc(100vh - 90px);
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top_nav {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 250px;
+}
+
+.middle_nav {
+  background: #000;
+  width: 300px;
+  height: 100%;
+  margin-top: 250px;
+  margin-bottom: 90px;
+  overflow-y: scroll;
+  padding: 25px;
+  color: #fff;
+}
+
+.bottom_nav {
+  background: #000;
+  position: fixed;
+  left: 0;
+  bottom: 90px;
+  width: 300px;
+  height: 90px;
+}
+
+.main_content {
+  width: calc(100% - 300px);
+  min-height: calc(100vh - 180px);
+  background: #242630;
+  margin-left: 300px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  padding: 25px;
+}
+
+footer {
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  background: #181818;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.ft_left,
+.ft_right {
+  width: 300px;
+  height: 90px;
+  background: rgba(255,255,255,0.1);
+}
+
+.ft_middle {
+  width: calc(100% - 600px);
+  height: 90px;
+  background: rgba(255,255,255,0.4);
+}
+
+@media screen and (max-width: 767px) {
+
+  .main_top {
+    left: 50px;
+    width: calc(100% - 50px);
+    background: #191622;
+  }
+
+  .main_nav,
+  .top_nav,
+  .bottom_nav {
+    width: 50px;
+  }
+
+  .middle_nav {
+    display: none;
+  }
+
+  .main_content {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+  }
+
+  .ft_left,
+  .ft_right {
+    width: 150px;
+  }
+
+  .ft_middle {
+    width: calc(100% - 300px);
+
+  }
+
+}
