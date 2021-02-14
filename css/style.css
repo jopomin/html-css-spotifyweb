@@ -7,9 +7,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background: black;
-  font-size: 20px;
-  line-height: 1.75;
   color: #fff;
+}
+
+a {
+  text-decoration: none;
 }
 
 .main_top {
@@ -131,6 +133,34 @@ body {
   color: #fff;
 }
 
+.middle_menu {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle_menu ul {
+  list-style: none;
+}
+
+.middle_menu ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.middle_menu ul li a {
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.middle_menu ul li:hover a {
+  color: #fff;
+}
+
 .bottom_nav {
   background: #000;
   position: fixed;
@@ -147,7 +177,6 @@ body {
   margin-left: 300px;
   margin-top: 90px;
   margin-bottom: 90px;
-  padding: 25px;
 }
 
 footer {
@@ -166,14 +195,124 @@ footer {
 .ft_left,
 .ft_right {
   width: 300px;
+  padding: 15px;
   height: 90px;
   background: rgba(255,255,255,0.1);
+}
+
+.ft_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_artist {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu_artist > li {
+  display: inline-block;
+}
+
+.menu_artist > li a img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.artist_track {
+  list-style: none;
+}
+
+#ft_artist {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#ft_track {
+  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+}
+
+.menu_favorites {
+  list-style: none;
+}
+
+.menu_favorites li {
+  display: inline-block;
+}
+
+.menu_favorites li a {
+  color: rgba(255,255,255,0.5);
+}
+
+.menu_favorites .far {
+  font-size: 16px;
+  margin-left: 12px;
 }
 
 .ft_middle {
   width: calc(100% - 600px);
   height: 90px;
-  background: rgba(255,255,255,0.4);
+  text-align: center;
+  padding: 15px;
+}
+
+.ft_pl_buttons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ft_pl_buttons li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.ft_pl_buttons li a i {
+  color: #fff;
+}
+
+.fa-play-circle {
+  font-size: 32px;
+  margin: 0 14px;
+}
+
+.bottom_player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.song_bar {
+  width: 50%;
+  margin: 0 20px;
+  position: relative;
+}
+
+.sb_transp {
+  border-width: 3px 0 0 0;
+  border-style: solid;
+  border-color: rgba(255,255,255,0.5);
+  border-radius: 100px;
+}
+
+.sb_white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 30%;
+  border-width: 3px 0 0 0;
+  border-style: solid;
+  border-color: #fff;
+  border-radius: 100px;
 }
 
 @media screen and (max-width: 767px) {
