@@ -167,7 +167,42 @@ a {
   left: 0;
   bottom: 90px;
   width: 300px;
-  height: 90px;
+  padding: 15px;
+}
+
+.bn_install {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px 0;
+  color: rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.bn_install i {
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.bn_profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.bn_pr_photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.bn_pr_photo img {
+  width: 100%;
 }
 
 .main_content {
