@@ -30,6 +30,7 @@ h3 {
   position: fixed;
   top: 0;
   left: 300px;
+  z-index: 999;
   width: calc(100% - 300px);
   height: 90px;
   background: #191622;
@@ -41,7 +42,7 @@ h3 {
   border-radius: 50px;
   border: 1px solid #fff;
   text-align: center;
-  margin-left: calc(100% - 300px);
+  margin-left: calc(100% - 320px);
 }
 
 #upgrade a {
@@ -54,19 +55,11 @@ h3 {
   font-weight: 600;
 }
 
-#upgrade:hover {
-  background: #fff;
-  cursor: pointer;
-}
-
-#upgrade:hover a {
-  color: #191622;
-}
-
 #left_nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   width: 300px;
   height: calc(100vh - 90px);
   background: #000;
@@ -212,6 +205,7 @@ h3 {
   justify-content: flex-start;
   align-items: center;
   font-size: 15px;
+  font-weight: 600;
   padding-bottom: 20px;
   color: rgba(255,255,255,0.5);
   border-bottom: 1px solid rgba(255,255,255,0.5);
@@ -272,10 +266,6 @@ h3 {
   margin-right: 0;
 }
 
-#top_nav ul li:hover a {
-  color: #fff;
-}
-
 .song_container {
   padding: 0 30px;
 }
@@ -297,18 +287,41 @@ h3 {
   margin: 30px 20px 30px 0;
 }
 
-.pld_round {
+.pld:last-child {
+  margin: 30px 0 30px 0;
+}
+
+.cover_container {
+  position: relative;
+}
+
+.cover_container img {
+  width: 100%;
+}
+
+.cc_round {
   border-radius: 100%;
   width: 100%;
   overflow: hidden;
 }
 
-.pld:last-child {
-  margin: 30px 0 30px 0;
+.song_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
 }
 
-.pld img {
-  width: 100%;
+.song_hover i {
+  font-size: 60px;
 }
 
 .profile_screen {
@@ -329,6 +342,7 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -422,7 +436,7 @@ footer {
   margin: 0 12px;
 }
 
-.fa-play-circle {
+.ft_pl_buttons .fa-play-circle {
   font-size: 32px;
   margin: 0 14px;
 }
@@ -438,29 +452,46 @@ footer {
   margin: 10px 0;
 }
 
-.song_bar {
+#song_bar {
   width: 50%;
   margin: 0 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .sb_transp {
-  border-width: 3px 0 0 0;
+  border-width: 5px 0 0 0;
   border-style: solid;
   border-color: rgba(255,255,255,0.5);
   border-radius: 100px;
 }
 
-.sb_white {
+.sb_active {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  width: 9%;
-  border-width: 3px 0 0 0;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.sb_white {
+  width: 100%;
+  border-width: 5px 0 0 0;
   border-style: solid;
   border-color: #fff;
   border-radius: 100px;
+}
+
+.hr_circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #fff;
+  visibility: hidden;
 }
 
 .ft_right .fas {
@@ -472,11 +503,12 @@ footer {
 #volume_bar {
   width: 20px;
   flex-grow: 1;
+  cursor: pointer;
   position: relative;
 }
 
 .vb_transp {
-  border-width: 3px 0 0 0;
+  border-width: 5px 0 0 0;
   border-style: solid;
   border-color: rgba(255,255,255,0.5);
   border-radius: 100px;
@@ -488,10 +520,74 @@ footer {
   left: 0;
   z-index: 1;
   width: 30%;
-  border-width: 3px 0 0 0;
+  border-width: 5px 0 0 0;
   border-style: solid;
   border-color: #fff;
   border-radius: 100px;
+}
+
+/* HOVER */
+
+#upgrade:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.pld:hover .song_hover {
+  visibility: visible;
+  cursor: pointer;
+}
+
+#top_nav a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.new_playlist:hover .add_playlist {
+  cursor: pointer;
+  background: #fff;
+}
+
+.new_playlist:hover p {
+  cursor: pointer;
+  color: #fff;
+}
+
+#left_nav_middle ul li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.bn_install:hover p,
+.bn_install:hover i {
+  cursor: pointer;
+  color: #fff;
+}
+
+#ft_track:hover {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.menu_favorites li a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.ft_pl_buttons .fa-play-circle:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#song_bar:hover .sb_white,
+#volume_bar:hover .vb_white {
+  border-color: lime;
+}
+
+#song_bar:hover .hr_circle {
+  visibility: visible;
 }
 
 @media screen and (max-width: 767px) {
