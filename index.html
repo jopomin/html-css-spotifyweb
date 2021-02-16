@@ -19,14 +19,15 @@
       <section id="left_nav">
         <div id="left_nav_top">
           <div id="logo">
-            <img src="img/logo-wg.svg" alt="Spotify Logo">
+            <img src="img/logo-wg.svg" class="logo_big xs_hidden" alt="Spotify Logo">
+            <img src="img/logo-small-wg.svg" class="logo_small sm_hidden" alt="Spotify Logo Small">
           </div>
           <ul id="left_menu">
-            <li id="home"><img src="img/home.svg" alt="home"><a href="#">Home</a></li>
-            <li><img src="img/search.svg" alt="cerca"><a href="#">Cerca</a></li>
-            <li><img src="img/libreria.svg" alt="libreria"><a href="#">La tua libreria</a></li>
+            <li id="home"><img src="img/home.svg" alt="home"><a href="#" class="xs_hidden">Home</a></li>
+            <li><img src="img/search.svg" alt="cerca"><a href="#" class="xs_hidden">Cerca</a></li>
+            <li><img src="img/libreria.svg" alt="libreria"><a href="#" class="xs_hidden">La tua libreria</a></li>
           </ul>
-          <div id="playlist">
+          <div id="playlist" class="xs_hidden">
             <h4>playlist</h4>
             <div class="new_playlist">
               <div class="add_playlist">
@@ -36,7 +37,7 @@
             </div>
           </div>
         </div>
-        <div id="left_nav_middle">
+        <div id="left_nav_middle" class="xs_hidden">
           <ul>
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
@@ -57,62 +58,60 @@
             <li>Nome Playlist</li>
           </ul>
         </div>
-        <div id="bottom_nav">
+        <div id="left_nav_bottom">
           <div class="bn_install">
             <i class="far fa-arrow-alt-circle-down"></i>
-            <p>Installa App</p>
+            <p class="xs_hidden">Installa App</p>
           </div>
           <div class="bn_profile">
             <div class="bn_pr_photo">
               <img src="img/gio.gif" alt="Giovanni P">
             </div>
-            <h4>Giovanni Porcelli</h4>
+            <h4 class="xs_hidden">Giovanni Porcelli</h4>
           </div>
         </div>
       </section>
       <section class="profile_screen">
         <div id="top_nav">
-          <ul>
-            <li><a href="">in evidenza</a></li>
-            <li><a href="">podcast</a></li>
-            <li><a href="">classifiche</a></li>
-            <li><a href="">generi e mood</a></li>
-            <li><a href="">nuove uscite</a></li>
-            <li><a href="">scopri</a></li>
-          </ul>
+          <a href="">in evidenza</a>
+          <a href="">podcast</a>
+          <a href="">classifiche</a>
+          <a href="">generi e mood</a>
+          <a href="">nuove uscite</a>
+          <a href="">scopri</a>
         </div>
         <div id="main_content">
           <div class="song_container">
             <h2>Recently Played</h2>
             <div class="song_row">
               <div id="pld_one" class="pld">
-                <img src="img/cure.jpeg" alt="">
+                <img src="img/metal_lifting.jpg" alt="Heavy Metal">
                 <h3>Heavy Metal</h3>
                 <p>Subtitle</p>
               </div>
               <div id="pld_two" class="pld">
-                <img src="img/cure.jpeg" alt="">
-                <h3>Heavy Metal</h3>
-                <p>Subtitle</p>
+                <img src="img/stranger.jpeg" alt="Stranger Things">
+                <h3>Stranger Things, Vol 1 (a Netflix Original Series Soundtrack)</h3>
+                <p>Kyle Dixon & Michael Stein</p>
               </div>
               <div id="pld_three" class="pld">
-                <img src="img/cure.jpeg" alt="">
-                <h3>Heavy Metal</h3>
+                <img src="img/aquietplace.jpeg" alt="A Quite Place">
+                <h3>A Quiet Place</h3>
                 <p>Subtitle</p>
               </div>
               <div id="pld_four" class="pld">
-                <img src="img/cure.jpeg" alt="">
-                <h3>Heavy Metal</h3>
+                <img src="img/split.jpeg" alt="Split">
+                <h3>Split</h3>
                 <p>Subtitle</p>
               </div>
               <div id="pld_five" class="pld">
-                <img src="img/cure.jpeg" alt="">
-                <h3>Heavy Metal</h3>
+                <img src="img/cure.jpeg" alt="A Cure for Wellness">
+                <h3>A Cure for Wellness</h3>
                 <p>Subtitle</p>
               </div>
               <div id="pld_six" class="pld">
-                <img src="img/cure.jpeg" alt="">
-                <h3>Heavy Metal</h3>
+                <img src="img/sinister.jpeg" alt="Sinister">
+                <h3>Sinister</h3>
                 <p>Subtitle</p>
               </div>
             </div>
