@@ -544,6 +544,10 @@ footer {
   visibility: hidden;
 }
 
+.audio_1 {
+  width: 100%;
+}
+
 /* EFFECTS */
 
 #upgrade:hover {

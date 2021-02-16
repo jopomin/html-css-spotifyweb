@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bonus.css">
+    <title>Spotify - Esercizio 12/16 Febbraio</title>
+  </head>
+  <body>
+    <main>
+      <section class="upg_container">
+        <div id="upgrade">
+          <a href="#">Effettua l'upgrade</a>
+        </div>
+      </section>
+      <section id="left_nav">
+        <div id="left_nav_top">
+          <div id="logo">
+            <img src="img/logo-wg.svg" class="logo_big xs_hidden" alt="Spotify Logo">
+            <img src="img/logo-small-wg.svg" class="logo_small sm_hidden" alt="Spotify Logo Small">
+          </div>
+          <ul id="left_menu">
+            <li id="home"><img src="img/home.svg" alt="home"><a href="#" class="xs_hidden">Home</a></li>
+            <li><img src="img/search.svg" alt="cerca"><a href="#" class="xs_hidden">Cerca</a></li>
+            <li><img src="img/libreria.svg" alt="libreria"><a href="#" class="xs_hidden">La tua libreria</a></li>
+          </ul>
+          <div id="playlist" class="xs_hidden">
+            <h4>playlist</h4>
+            <div class="new_playlist">
+              <div class="add_playlist">
+                <i class="fas fa-plus"></i>
+              </div>
+              <p>Crea Playlist</p>
+            </div>
+          </div>
+        </div>
+        <div id="left_nav_middle" class="xs_hidden">
+          <ul>
+            <li>Slowdive</li>
+            <li>U2 Live</li>
+            <li>Arcade Fire</li>
+            <li>Beach House</li>
+            <li>Franz Ferdinand</li>
+            <li>Queen</li>
+            <li>Sigur Rós</li>
+            <li>Gris OST</li>
+            <li>Daft Punk</li>
+            <li>Royksopp</li>
+            <li>Tame Impala</li>
+            <li>Verdena</li>
+          </ul>
+        </div>
+        <div id="left_nav_bottom">
+          <div class="bn_install">
+            <i class="far fa-arrow-alt-circle-down"></i>
+            <p class="xs_hidden">Installa App</p>
+          </div>
+          <div class="bn_profile">
+            <div class="bn_pr_photo">
+              <img src="img/gio.gif" alt="Giovanni P">
+            </div>
+            <h4 class="xs_hidden"><a href="https://www.linkedin.com/in/giovanniporcelliminervini/" target="_blank">Giovanni Porcelli</a></h4>
+          </div>
+        </div>
+      </section>
+      <section class="profile_screen">
+        <div id="top_nav">
+          <a href="">in evidenza</a>
+          <a href="">podcast</a>
+          <div class="tn_active">
+            <a href="">classifiche</a>
+            <hr>
+          </div>
+          <a href="">generi e mood</a>
+          <a href="">nuove uscite</a>
+          <a href="">scopri</a>
+        </div>
+        <div id="main_content">
+          <div class="song_container">
+            <h2>Recently Played</h2>
+            <div class="song_row">
+              <div id="pld_one" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_sugar" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/slowdive.jpg" alt="Slowdive">
+                </div>
+                <h3>Slowdive</h3>
+                <p>Slowdive</p>
+              </div>
+              <div id="pld_two" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_sunday" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/u2.jpg" alt="U2 - Under a Red Blood Sky">
+                </div>
+                <h3>Under a Red Blood Sky</h3>
+                <p>U2</p>
+              </div>
+              <div id="pld_three" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_rebellion" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/arcade.jpg" alt="Arcade Fire - Funeral">
+                </div>
+                <h3>Funeral</h3>
+                <p>Arcade Fire</p>
+              </div>
+              <div id="pld_four" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_space" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/beach.jpg" alt="Beach House - Depression Cherry">
+                </div>
+                <h3>Depression Cherry</h3>
+                <p>Beach House</p>
+              </div>
+              <div id="pld_five" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_take" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/franz.jpg" alt="Franz Ferdinand - Franz Ferdinand">
+                </div>
+                <h3>Franz Ferdinand</h3>
+                <p>Franz Ferdinand</p>
+              </div>
+              <div id="pld_six" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_bohe" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/queen.jpg" alt="Queen - A Night at the Opera">
+                </div>
+                <h3>A Night at the Opera</h3>
+                <p>Queen</p>
+              </div>
+              <div id="pld_seven" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_olsen" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/sigur.jpg" alt="Sigur Rós - Ágætis byrjun">
+                </div>
+                <h3>Ágætis byrjun</h3>
+                <p>Sigur Rós</p>
+              </div>
+              <div id="pld_eight" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_gris" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/gris.jpg" alt="Gris - Original Soundtrack">
+                </div>
+                <h3>Gris OST</h3>
+                <p>Berlinist</p>
+              </div>
+            </div>
+          </div>
+          <div id="create" class="song_container">
+            <h2>Creato per Giovanni Porcelli</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="song_row">
+              <div id="pld_nine" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_clue" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/royksopp.jpg" alt="Royksopp - The Understanding">
+                </div>
+                <h3>The Understanding</h3>
+                <p>Royksopp</p>
+              </div>
+              <div id="pld_nine" class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_alive" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/daft.jpg" alt="Daft Punk - Alive 2007">
+                </div>
+                <h3>Alive 2007</h3>
+                <p>Daft Punk</p>
+              </div>
+            </div>
+          </div>
+          <div id="popular" class="song_container">
+            <h2>Artisti più popolari</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+            <div class="song_row">
+              <div class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_verde" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/verdena.jpg" alt="Verdena - WOW">
+                </div>
+                <h3>WOW</h3>
+                <p>Verdena</>
+              </div>
+              <div class="pld">
+                <div class="cover_container">
+                  <div class="song_hover">
+                    <img id="cover_tame" src="img/play_g.png" alt="play">
+                  </div>
+                  <img src="img/tame.jpg" alt="Tame Impala - Lonerism">
+                </div>
+                <h3>Lonerism</h3>
+                <p>Tame Impala</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </main>
+      <footer>
+        <div class="ft_left">
+          <ul class="menu_artist">
+            <li><a href=""><img src="img/slowdive.jpg" alt="Sugar for the Pill"></a></li>
+            <li>
+              <ul class="artist_track">
+                <li><a href="#" id="ft_artist">Sugar for the Pill</a></li>
+                <li><a href="#" id="ft_track">Slowdive</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="menu_favorites">
+            <li><a href="#"><i class="far fa-heart"></i></a></li>
+            <li><a href="#"><i class="far fa-folder"></i></a></li>
+          </ul>
+        </div>
+        <div class="ft_middle">
+          <div class="top_player">
+            <div class="ft_pl_buttons">
+              <i class="fas fa-random"></i>
+              <i class="fas fa-step-backward"></i>
+              <img id="play_pause" src="img/play_w.png" alt="play_pause">
+              <i class="fas fa-step-forward"></i>
+              <i class="fas fa-redo-alt"></i>
+            </div>
+          </div>
+          <div class="bottom_player">
+            <div class="song_start">
+              <p>0:59</p>
+            </div>
+            <div id="song_bar">
+              <hr class="sb_transp">
+              <div class="sb_active">
+                <hr class="sb_white">
+                <div class="sb_circle"></div>
+              </div>
+            </div>
+            <div class="song_end">
+              <p>4:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="ft_right">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <div id="volume_bar">
+            <hr class="vb_transp">
+            <div class="vb_active">
+              <hr class="vb_white">
+              <div class="vb_circle"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <audio id="sugar">
+        <source src="audio/sugar_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="sunday">
+        <source src="audio/sunday_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="rebellion">
+        <source src="audio/rebellion_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="take">
+        <source src="audio/take-short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="space">
+        <source src="audio/space_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="bohe">
+        <source src="audio/bohe_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="olsen">
+        <source src="audio/olsen_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="gris">
+        <source src="audio/gris_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="clue">
+        <source src="audio/clue_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="alive">
+        <source src="audio/alive_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="verde">
+        <source src="audio/verde_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="tame">
+        <source src="audio/tame_short.mp3" type="audio/mp3">
+      </audio>
+      <audio id="suglong">
+        <source src="audio/sugar_long.mp3" type="audio/mp3">
+      </audio>
+
+      <script>
+        var sugar = document.getElementById('sugar');
+        var sunday = document.getElementById('sunday');
+        var rebellion = document.getElementById('rebellion');
+        var take = document.getElementById('take');
+        var space = document.getElementById('space');
+        var bohe = document.getElementById('bohe');
+        var olsen = document.getElementById('olsen');
+        var gris = document.getElementById('gris');
+        var clue = document.getElementById('clue');
+        var alive = document.getElementById('alive');
+        var verde = document.getElementById('verde');
+        var tame = document.getElementById('tame');
+        var suglong = document.getElementById('suglong');
+
+        var cover_sugar = document.getElementById('cover_sugar');
+        var cover_sunday = document.getElementById('cover_sunday');
+        var cover_rebellion = document.getElementById('cover_rebellion');
+        var cover_take = document.getElementById('cover_take');
+        var cover_space = document.getElementById('cover_space');
+        var cover_bohe = document.getElementById('cover_bohe');
+        var cover_olsen = document.getElementById('cover_olsen');
+        var cover_gris = document.getElementById('cover_gris');
+        var cover_clue = document.getElementById('cover_clue');
+        var cover_alive = document.getElementById('cover_alive');
+        var cover_verde = document.getElementById('cover_verde');
+        var cover_tame = document.getElementById('cover_tame');
+        var play_pause = document.getElementById('play_pause');
+
+        cover_sugar.onclick = function(){
+          if(sugar.paused){
+            sugar.play();
+            cover_sugar.src="img/pause_w.png";
+            }else{
+              sugar.pause();
+              cover_sugar.src="img/play_g.png";
+            }
+          }
+
+        cover_sunday.onclick = function(){
+          if(sunday.paused){
+            sunday.play();
+            cover_sunday.src="img/pause_w.png";
+            }else{
+              sunday.pause();
+              cover_sunday.src="img/play_g.png";
+            }
+          }
+
+        cover_rebellion.onclick = function(){
+          if(rebellion.paused){
+            rebellion.play();
+            cover_rebellion.src="img/pause_w.png";
+            }else{
+              rebellion.pause();
+              cover_rebellion.src="img/play_g.png";
+            }
+          }
+
+        cover_take.onclick = function(){
+          if(take.paused){
+            take.play();
+            cover_take.src="img/pause_w.png";
+            }else{
+              take.pause();
+              cover_take.src="img/play_g.png";
+            }
+          }
+
+        cover_space.onclick = function(){
+          if(space.paused){
+            space.play();
+            cover_space.src="img/pause_w.png";
+            }else{
+              space.pause();
+              cover_space.src="img/play_g.png";
+            }
+          }
+
+        cover_bohe.onclick = function(){
+          if(bohe.paused){
+            bohe.play();
+            cover_bohe.src="img/pause_w.png";
+            }else{
+              bohe.pause();
+              cover_bohe.src="img/play_g.png";
+            }
+          }
+
+        cover_olsen.onclick = function(){
+          if(olsen.paused){
+            olsen.play();
+            cover_olsen.src="img/pause_w.png";
+            }else{
+              olsen.pause();
+              cover_olsen.src="img/play_g.png";
+            }
+          }
+
+        cover_gris.onclick = function(){
+          if(gris.paused){
+            gris.play();
+            cover_gris.src="img/pause_w.png";
+            }else{
+              gris.pause();
+              cover_gris.src="img/play_g.png";
+            }
+          }
+
+        cover_clue.onclick = function(){
+          if(clue.paused){
+            clue.play();
+            cover_clue.src="img/pause_w.png";
+            }else{
+              clue.pause();
+              cover_clue.src="img/play_g.png";
+            }
+          }
+
+        cover_alive.onclick = function(){
+          if(alive.paused){
+            alive.play();
+            cover_alive.src="img/pause_w.png";
+            }else{
+              alive.pause();
+              cover_alive.src="img/play_g.png";
+            }
+          }
+
+        cover_verde.onclick = function(){
+          if(verde.paused){
+            verde.play();
+            cover_verde.src="img/pause_w.png";
+            }else{
+              verde.pause();
+              cover_verde.src="img/play_g.png";
+            }
+          }
+
+        cover_tame.onclick = function(){
+          if(tame.paused){
+            tame.play();
+            cover_tamee.src="img/pause_w.png";
+            }else{
+              tame.pause();
+              cover_tame.src="img/play_g.png";
+            }
+          }
+
+        play_pause.onclick = function(){
+          if(suglong.paused){
+            suglong.play();
+            play_pause.src="img/pause_g.png";
+            }else{
+              suglong.pause();
+              play_pause.src="img/play_w.png";
+            }
+          }
+
+      </script>
+  </body>
+</html>
